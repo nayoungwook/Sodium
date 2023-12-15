@@ -1,4 +1,5 @@
-import app
+import editor
 
-if __name__ == '__main__':
-    app.App()
+if __name__ == "__main__":
+    ed = editor.Editor()
+    ed.run()
