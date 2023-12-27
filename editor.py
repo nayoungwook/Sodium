@@ -1,11 +1,14 @@
 import pygame
-
+from atom import Atom
+from openbabel import pybabel
+from openbabel import pybel
 
 wsize = (1280, 720)
+
+
 cs = 50
 
 class Button():
-
     def __init__(self, att, j, i):
 
         self.i = i
@@ -35,7 +38,7 @@ class Button():
         screen.blit(f, f.get_rect(center=(wsize[0] / 2 + (cs) * (-9 + j) + cs / 2,\
                                                wsize[1] - sc[1] + cs / 2 + (cs) * i + cs / 2)))
 
-    def tick(self):
+    def tick(self, atoms, editor):
         global cs
         
         twm = abs(pygame.mouse.get_pos()[0] - (self.pos[0])) < 25 and\
@@ -43,6 +46,9 @@ class Button():
 
         if twm:
             self.scale += (cs / 3 * 4 - self.scale) / 5
+
+            if editor.click:
+                atoms.append(Atom(self.att[self.i][self.j], editor.att))
         else:
             self.scale += (cs - self.scale) / 5
         
@@ -54,6 +60,9 @@ class Editor():
         pygame.init()
         pygame.font.init()
         self.font = pygame.font.Font("font.ttf", 30)
+
+        self.click = False
+        self.atoms = []
 
         self.w = 18
         self.h = 4
@@ -71,7 +80,40 @@ class Editor():
             for j in range(len(self.att[i])):
                 if self.att[i][j] != '':
                     self.buttons.append(Button(self.att, j, i))
-        
+
+        # Atom 생성
+        carbon = Atom("C", self.att)
+        oxygen = Atom("O", self.att)
+        hydrogen = Atom("H", self.att)
+        self.atoms.append(carbon)
+        self.atoms.append(oxygen)
+        self.atoms.append(hydrogen)
+
+        # Bond 생성
+        carbon.add_bond(hydrogen, "-")
+        carbon.add_bond(oxygen, "=")
+
+        # Smiles 변환
+        smiles_representation = self.to_smiles(carbon)
+        print("Smiles 표기법:", smiles_representation)
+
+        m = pybel.readstring("smi", smiles_representation)
+        print(m)
+
+    def to_smiles(self, atom, visited=None):
+        if visited is None:
+            visited = set()
+
+        smiles = atom.at_type
+        visited.add(atom)
+
+        for neighbor, bond_type in atom.bonds:
+            if neighbor not in visited:
+                smiles += f"({self.to_smiles(neighbor, visited)})"
+                smiles += bond_type
+
+        return smiles
+
     def run(self):
         global wsize
         self.screen = pygame.display.set_mode(wsize)
@@ -79,9 +121,12 @@ class Editor():
         run = True
 
         while run:
+            self.click = False
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     run = False
+                elif event.type == pygame.MOUSEBUTTONUP:
+                    self.click = True
 
             self.tick()
             self.draw()
@@ -94,7 +139,7 @@ class Editor():
 
     def tick(self):
         for btn in self.buttons:
-            btn.tick()
+            btn.tick(self.atoms, self)
         
     def bg(self):
         self.bgt -= 1
@@ -124,4 +169,6 @@ class Editor():
         self.screen.fill((0, 55, 0))
         self.bg()
         self.table()
-        
+
+        for atom in self.atoms:
+            atom.draw(self.screen, self.font)
