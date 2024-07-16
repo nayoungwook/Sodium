@@ -1,0 +1,1213 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      The system is: Windows - 10.0.19045 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      msbuild 버전 17.8.3+195e7f5a3(.NET Framework용)
+      빌드 시작: 2024-07-16 오전 9:05:31
+      
+      1 노드의 "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\3.30.0\\CompilerIdC\\CompilerIdC.vcxproj" 프로젝트(기본 대상)입니다.
+      PrepareForBuild:
+        "Debug\\" 디렉터리를 만들고 있습니다.
+        구조적 출력을 사용할 수 있습니다. 컴파일러 진단의 서식은 오류 계층 구조를 반영합니다. 자세한 내용은 https://aka.ms/cpp/structured-output을 참조하세요.
+        "Debug\\CompilerIdC.tlog\\" 디렉터리를 만들고 있습니다.
+      InitializeBuildStatus:
+        "AlwaysCreate"이(가) 지정되었기 때문에 "Debug\\CompilerIdC.tlog\\unsuccessfulbuild"을(를) 만들고 있습니다.
+        "Debug\\CompilerIdC.tlog\\unsuccessfulbuild"에 연결(touching)하고 있습니다.
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+        CMakeCCompilerId.c
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
+        CompilerIdC.vcxproj -> C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\3.30.0\\CompilerIdC\\CompilerIdC.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_C_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        "Debug\\CompilerIdC.tlog\\unsuccessfulbuild" 파일을 삭제하고 있습니다.
+        "Debug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate"에 연결(touching)하고 있습니다.
+      "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\3.30.0\\CompilerIdC\\CompilerIdC.vcxproj" 프로젝트를 빌드했습니다(기본 대상).
+      
+      빌드했습니다.
+          경고 0개
+          오류 0개
+      
+      경과 시간: 00:00:01.60
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+      
+      The C compiler identification is MSVC, found in:
+        C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/3.30.0/CompilerIdC/CompilerIdC.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      msbuild 버전 17.8.3+195e7f5a3(.NET Framework용)
+      빌드 시작: 2024-07-16 오전 9:05:33
+      
+      1 노드의 "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\3.30.0\\CompilerIdCXX\\CompilerIdCXX.vcxproj" 프로젝트(기본 대상)입니다.
+      PrepareForBuild:
+        "Debug\\" 디렉터리를 만들고 있습니다.
+        구조적 출력을 사용할 수 있습니다. 컴파일러 진단의 서식은 오류 계층 구조를 반영합니다. 자세한 내용은 https://aka.ms/cpp/structured-output을 참조하세요.
+        "Debug\\CompilerIdCXX.tlog\\" 디렉터리를 만들고 있습니다.
+      InitializeBuildStatus:
+        "AlwaysCreate"이(가) 지정되었기 때문에 "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild"을(를) 만들고 있습니다.
+        "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild"에 연결(touching)하고 있습니다.
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        CMakeCXXCompilerId.cpp
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
+        CompilerIdCXX.vcxproj -> C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\3.30.0\\CompilerIdCXX\\CompilerIdCXX.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_CXX_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild" 파일을 삭제하고 있습니다.
+        "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate"에 연결(touching)하고 있습니다.
+      "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\3.30.0\\CompilerIdCXX\\CompilerIdCXX.vcxproj" 프로젝트를 빌드했습니다(기본 대상).
+      
+      빌드했습니다.
+          경고 0개
+          오류 0개
+      
+      경과 시간: 00:00:01.32
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/3.30.0/CompilerIdCXX/CompilerIdCXX.exe
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-vj0fbs"
+      binary: "C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-vj0fbs"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-vj0fbs'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_ede4b.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        msbuild 버전 17.8.3+195e7f5a3(.NET Framework용)
+        빌드 시작: 2024-07-16 오전 9:05:35
+        
+        1 노드의 "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-vj0fbs\\cmTC_ede4b.vcxproj" 프로젝트(기본 대상)입니다.
+        PrepareForBuild:
+          "cmTC_ede4b.dir\\Debug\\" 디렉터리를 만들고 있습니다.
+          구조적 출력을 사용할 수 있습니다. 컴파일러 진단의 서식은 오류 계층 구조를 반영합니다. 자세한 내용은 https://aka.ms/cpp/structured-output을 참조하세요.
+          "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-vj0fbs\\Debug\\" 디렉터리를 만들고 있습니다.
+          "cmTC_ede4b.dir\\Debug\\cmTC_ede4b.tlog\\" 디렉터리를 만들고 있습니다.
+        InitializeBuildStatus:
+          "AlwaysCreate"이(가) 지정되었기 때문에 "cmTC_ede4b.dir\\Debug\\cmTC_ede4b.tlog\\unsuccessfulbuild"을(를) 만들고 있습니다.
+          "cmTC_ede4b.dir\\Debug\\cmTC_ede4b.tlog\\unsuccessfulbuild"에 연결(touching)하고 있습니다.
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ede4b.dir\\Debug\\\\" /Fd"cmTC_ede4b.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCCompilerABI.c"
+          Microsoft (R) C/C++ 최적화 컴파일러 버전 19.38.33133(x64)
+          Copyright (c) Microsoft Corporation. All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ede4b.dir\\Debug\\\\" /Fd"cmTC_ede4b.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCCompilerABI.c"
+          CMakeCCompilerABI.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-vj0fbs\\Debug\\cmTC_ede4b.exe" /INCREMENTAL /ILK:"cmTC_ede4b.dir\\Debug\\cmTC_ede4b.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-vj0fbs/Debug/cmTC_ede4b.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-vj0fbs/Debug/cmTC_ede4b.lib" /MACHINE:X64  /machine:x64 cmTC_ede4b.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_ede4b.vcxproj -> C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-vj0fbs\\Debug\\cmTC_ede4b.exe
+        FinalizeBuildStatus:
+          "cmTC_ede4b.dir\\Debug\\cmTC_ede4b.tlog\\unsuccessfulbuild" 파일을 삭제하고 있습니다.
+          "cmTC_ede4b.dir\\Debug\\cmTC_ede4b.tlog\\cmTC_ede4b.lastbuildstate"에 연결(touching)하고 있습니다.
+        "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-vj0fbs\\cmTC_ede4b.vcxproj" 프로젝트를 빌드했습니다(기본 대상).
+        
+        빌드했습니다.
+            경고 0개
+            오류 0개
+        
+        경과 시간: 00:00:01.28
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'C': C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/HostX64/x64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Running the C compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.38.33133.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-iq9r94"
+      binary: "C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-iq9r94"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-iq9r94'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_1415d.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        msbuild 버전 17.8.3+195e7f5a3(.NET Framework용)
+        빌드 시작: 2024-07-16 오전 9:05:37
+        
+        1 노드의 "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-iq9r94\\cmTC_1415d.vcxproj" 프로젝트(기본 대상)입니다.
+        PrepareForBuild:
+          "cmTC_1415d.dir\\Debug\\" 디렉터리를 만들고 있습니다.
+          구조적 출력을 사용할 수 있습니다. 컴파일러 진단의 서식은 오류 계층 구조를 반영합니다. 자세한 내용은 https://aka.ms/cpp/structured-output을 참조하세요.
+          "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-iq9r94\\Debug\\" 디렉터리를 만들고 있습니다.
+          "cmTC_1415d.dir\\Debug\\cmTC_1415d.tlog\\" 디렉터리를 만들고 있습니다.
+        InitializeBuildStatus:
+          "AlwaysCreate"이(가) 지정되었기 때문에 "cmTC_1415d.dir\\Debug\\cmTC_1415d.tlog\\unsuccessfulbuild"을(를) 만들고 있습니다.
+          "cmTC_1415d.dir\\Debug\\cmTC_1415d.tlog\\unsuccessfulbuild"에 연결(touching)하고 있습니다.
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_1415d.dir\\Debug\\\\" /Fd"cmTC_1415d.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp"
+          Microsoft (R) C/C++ 최적화 컴파일러 버전 19.38.33133(x64)
+          Copyright (c) Microsoft Corporation. All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_1415d.dir\\Debug\\\\" /Fd"cmTC_1415d.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp"
+          CMakeCXXCompilerABI.cpp
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-iq9r94\\Debug\\cmTC_1415d.exe" /INCREMENTAL /ILK:"cmTC_1415d.dir\\Debug\\cmTC_1415d.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-iq9r94/Debug/cmTC_1415d.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-iq9r94/Debug/cmTC_1415d.lib" /MACHINE:X64  /machine:x64 cmTC_1415d.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_1415d.vcxproj -> C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-iq9r94\\Debug\\cmTC_1415d.exe
+        FinalizeBuildStatus:
+          "cmTC_1415d.dir\\Debug\\cmTC_1415d.tlog\\unsuccessfulbuild" 파일을 삭제하고 있습니다.
+          "cmTC_1415d.dir\\Debug\\cmTC_1415d.tlog\\cmTC_1415d.lastbuildstate"에 연결(touching)하고 있습니다.
+        "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-iq9r94\\cmTC_1415d.vcxproj" 프로젝트를 빌드했습니다(기본 대상).
+        
+        빌드했습니다.
+            경고 0개
+            오류 0개
+        
+        경과 시간: 00:00:01.33
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'CXX': C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/HostX64/x64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Running the CXX compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.38.33133.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "CMakeLists.txt:215 (check_include_file)"
+    checks:
+      - "Looking for conio.h"
+    directories:
+      source: "C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-upneqj"
+      binary: "C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-upneqj"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_MODULE_PATH: "C:/workspace/Sodium/openbabel/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_CONIO_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-upneqj'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_f2d25.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        msbuild 버전 17.8.3+195e7f5a3(.NET Framework용)
+        빌드 시작: 2024-07-16 오전 9:05:41
+        
+        1 노드의 "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-upneqj\\cmTC_f2d25.vcxproj" 프로젝트(기본 대상)입니다.
+        PrepareForBuild:
+          "cmTC_f2d25.dir\\Debug\\" 디렉터리를 만들고 있습니다.
+          구조적 출력을 사용할 수 있습니다. 컴파일러 진단의 서식은 오류 계층 구조를 반영합니다. 자세한 내용은 https://aka.ms/cpp/structured-output을 참조하세요.
+          "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-upneqj\\Debug\\" 디렉터리를 만들고 있습니다.
+          "cmTC_f2d25.dir\\Debug\\cmTC_f2d25.tlog\\" 디렉터리를 만들고 있습니다.
+        InitializeBuildStatus:
+          "AlwaysCreate"이(가) 지정되었기 때문에 "cmTC_f2d25.dir\\Debug\\cmTC_f2d25.tlog\\unsuccessfulbuild"을(를) 만들고 있습니다.
+          "cmTC_f2d25.dir\\Debug\\cmTC_f2d25.tlog\\unsuccessfulbuild"에 연결(touching)하고 있습니다.
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f2d25.dir\\Debug\\\\" /Fd"cmTC_f2d25.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-upneqj\\CheckIncludeFile.c"
+          Microsoft (R) C/C++ 최적화 컴파일러 버전 19.38.33133(x64)
+          Copyright (c) Microsoft Corporation. All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f2d25.dir\\Debug\\\\" /Fd"cmTC_f2d25.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-upneqj\\CheckIncludeFile.c"
+          CheckIncludeFile.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-upneqj\\Debug\\cmTC_f2d25.exe" /INCREMENTAL /ILK:"cmTC_f2d25.dir\\Debug\\cmTC_f2d25.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-upneqj/Debug/cmTC_f2d25.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-upneqj/Debug/cmTC_f2d25.lib" /MACHINE:X64  /machine:x64 cmTC_f2d25.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_f2d25.vcxproj -> C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-upneqj\\Debug\\cmTC_f2d25.exe
+        FinalizeBuildStatus:
+          "cmTC_f2d25.dir\\Debug\\cmTC_f2d25.tlog\\unsuccessfulbuild" 파일을 삭제하고 있습니다.
+          "cmTC_f2d25.dir\\Debug\\cmTC_f2d25.tlog\\cmTC_f2d25.lastbuildstate"에 연결(touching)하고 있습니다.
+        "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-upneqj\\cmTC_f2d25.vcxproj" 프로젝트를 빌드했습니다(기본 대상).
+        
+        빌드했습니다.
+            경고 0개
+            오류 0개
+        
+        경과 시간: 00:00:01.34
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "CMakeLists.txt:216 (check_include_file)"
+    checks:
+      - "Looking for sys/time.h"
+    directories:
+      source: "C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-4u28d7"
+      binary: "C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-4u28d7"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_MODULE_PATH: "C:/workspace/Sodium/openbabel/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_SYS_TIME_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-4u28d7'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_1e69b.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        msbuild 버전 17.8.3+195e7f5a3(.NET Framework용)
+        빌드 시작: 2024-07-16 오전 9:05:43
+        
+        1 노드의 "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-4u28d7\\cmTC_1e69b.vcxproj" 프로젝트(기본 대상)입니다.
+        PrepareForBuild:
+          "cmTC_1e69b.dir\\Debug\\" 디렉터리를 만들고 있습니다.
+          구조적 출력을 사용할 수 있습니다. 컴파일러 진단의 서식은 오류 계층 구조를 반영합니다. 자세한 내용은 https://aka.ms/cpp/structured-output을 참조하세요.
+          "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-4u28d7\\Debug\\" 디렉터리를 만들고 있습니다.
+          "cmTC_1e69b.dir\\Debug\\cmTC_1e69b.tlog\\" 디렉터리를 만들고 있습니다.
+        InitializeBuildStatus:
+          "AlwaysCreate"이(가) 지정되었기 때문에 "cmTC_1e69b.dir\\Debug\\cmTC_1e69b.tlog\\unsuccessfulbuild"을(를) 만들고 있습니다.
+          "cmTC_1e69b.dir\\Debug\\cmTC_1e69b.tlog\\unsuccessfulbuild"에 연결(touching)하고 있습니다.
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_1e69b.dir\\Debug\\\\" /Fd"cmTC_1e69b.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-4u28d7\\CheckIncludeFile.c"
+          Microsoft (R) C/C++ 최적화 컴파일러 버전 19.38.33133(x64)
+          Copyright (c) Microsoft Corporation. All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_1e69b.dir\\Debug\\\\" /Fd"cmTC_1e69b.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-4u28d7\\CheckIncludeFile.c"
+          CheckIncludeFile.c
+        C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-4u28d7\\CheckIncludeFile.c(1,10): error C1083: 포함 파일을 열 수 없습니다. 'sys/time.h': No such file or directory [C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-4u28d7\\cmTC_1e69b.vcxproj]
+        "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-4u28d7\\cmTC_1e69b.vcxproj" 프로젝트를 빌드했습니다(기본 대상). - 실패
+        
+        빌드하지 못했습니다.
+        
+        "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-4u28d7\\cmTC_1e69b.vcxproj"(기본 대상)(1)->
+        (ClCompile 대상) -> 
+          C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-4u28d7\\CheckIncludeFile.c(1,10): error C1083: 포함 파일을 열 수 없습니다. 'sys/time.h': No such file or directory [C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-4u28d7\\cmTC_1e69b.vcxproj]
+        
+            경고 0개
+            오류 1개
+        
+        경과 시간: 00:00:01.21
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "CMakeLists.txt:217 (check_include_file)"
+    checks:
+      - "Looking for time.h"
+    directories:
+      source: "C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-ukg6s0"
+      binary: "C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-ukg6s0"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_MODULE_PATH: "C:/workspace/Sodium/openbabel/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_TIME_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-ukg6s0'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_922dd.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        msbuild 버전 17.8.3+195e7f5a3(.NET Framework용)
+        빌드 시작: 2024-07-16 오전 9:05:44
+        
+        1 노드의 "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-ukg6s0\\cmTC_922dd.vcxproj" 프로젝트(기본 대상)입니다.
+        PrepareForBuild:
+          "cmTC_922dd.dir\\Debug\\" 디렉터리를 만들고 있습니다.
+          구조적 출력을 사용할 수 있습니다. 컴파일러 진단의 서식은 오류 계층 구조를 반영합니다. 자세한 내용은 https://aka.ms/cpp/structured-output을 참조하세요.
+          "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-ukg6s0\\Debug\\" 디렉터리를 만들고 있습니다.
+          "cmTC_922dd.dir\\Debug\\cmTC_922dd.tlog\\" 디렉터리를 만들고 있습니다.
+        InitializeBuildStatus:
+          "AlwaysCreate"이(가) 지정되었기 때문에 "cmTC_922dd.dir\\Debug\\cmTC_922dd.tlog\\unsuccessfulbuild"을(를) 만들고 있습니다.
+          "cmTC_922dd.dir\\Debug\\cmTC_922dd.tlog\\unsuccessfulbuild"에 연결(touching)하고 있습니다.
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_922dd.dir\\Debug\\\\" /Fd"cmTC_922dd.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-ukg6s0\\CheckIncludeFile.c"
+          Microsoft (R) C/C++ 최적화 컴파일러 버전 19.38.33133(x64)
+          Copyright (c) Microsoft Corporation. All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_922dd.dir\\Debug\\\\" /Fd"cmTC_922dd.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-ukg6s0\\CheckIncludeFile.c"
+          CheckIncludeFile.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-ukg6s0\\Debug\\cmTC_922dd.exe" /INCREMENTAL /ILK:"cmTC_922dd.dir\\Debug\\cmTC_922dd.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-ukg6s0/Debug/cmTC_922dd.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-ukg6s0/Debug/cmTC_922dd.lib" /MACHINE:X64  /machine:x64 cmTC_922dd.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_922dd.vcxproj -> C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-ukg6s0\\Debug\\cmTC_922dd.exe
+        FinalizeBuildStatus:
+          "cmTC_922dd.dir\\Debug\\cmTC_922dd.tlog\\unsuccessfulbuild" 파일을 삭제하고 있습니다.
+          "cmTC_922dd.dir\\Debug\\cmTC_922dd.tlog\\cmTC_922dd.lastbuildstate"에 연결(touching)하고 있습니다.
+        "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-ukg6s0\\cmTC_922dd.vcxproj" 프로젝트를 빌드했습니다(기본 대상).
+        
+        빌드했습니다.
+            경고 0개
+            오류 0개
+        
+        경과 시간: 00:00:01.24
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "CMakeLists.txt:218 (check_include_file)"
+    checks:
+      - "Looking for strings.h"
+    directories:
+      source: "C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-s9disl"
+      binary: "C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-s9disl"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_MODULE_PATH: "C:/workspace/Sodium/openbabel/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_STRINGS_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-s9disl'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_90e98.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        msbuild 버전 17.8.3+195e7f5a3(.NET Framework용)
+        빌드 시작: 2024-07-16 오전 9:05:46
+        
+        1 노드의 "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-s9disl\\cmTC_90e98.vcxproj" 프로젝트(기본 대상)입니다.
+        PrepareForBuild:
+          "cmTC_90e98.dir\\Debug\\" 디렉터리를 만들고 있습니다.
+          구조적 출력을 사용할 수 있습니다. 컴파일러 진단의 서식은 오류 계층 구조를 반영합니다. 자세한 내용은 https://aka.ms/cpp/structured-output을 참조하세요.
+          "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-s9disl\\Debug\\" 디렉터리를 만들고 있습니다.
+          "cmTC_90e98.dir\\Debug\\cmTC_90e98.tlog\\" 디렉터리를 만들고 있습니다.
+        InitializeBuildStatus:
+          "AlwaysCreate"이(가) 지정되었기 때문에 "cmTC_90e98.dir\\Debug\\cmTC_90e98.tlog\\unsuccessfulbuild"을(를) 만들고 있습니다.
+          "cmTC_90e98.dir\\Debug\\cmTC_90e98.tlog\\unsuccessfulbuild"에 연결(touching)하고 있습니다.
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_90e98.dir\\Debug\\\\" /Fd"cmTC_90e98.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-s9disl\\CheckIncludeFile.c"
+          Microsoft (R) C/C++ 최적화 컴파일러 버전 19.38.33133(x64)
+          Copyright (c) Microsoft Corporation. All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_90e98.dir\\Debug\\\\" /Fd"cmTC_90e98.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-s9disl\\CheckIncludeFile.c"
+          CheckIncludeFile.c
+        C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-s9disl\\CheckIncludeFile.c(1,10): error C1083: 포함 파일을 열 수 없습니다. 'strings.h': No such file or directory [C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-s9disl\\cmTC_90e98.vcxproj]
+        "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-s9disl\\cmTC_90e98.vcxproj" 프로젝트를 빌드했습니다(기본 대상). - 실패
+        
+        빌드하지 못했습니다.
+        
+        "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-s9disl\\cmTC_90e98.vcxproj"(기본 대상)(1)->
+        (ClCompile 대상) -> 
+          C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-s9disl\\CheckIncludeFile.c(1,10): error C1083: 포함 파일을 열 수 없습니다. 'strings.h': No such file or directory [C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-s9disl\\cmTC_90e98.vcxproj]
+        
+            경고 0개
+            오류 1개
+        
+        경과 시간: 00:00:01.21
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "CMakeLists.txt:219 (check_include_file)"
+    checks:
+      - "Looking for rpc/xdr.h"
+    directories:
+      source: "C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-rvwv4q"
+      binary: "C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-rvwv4q"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_MODULE_PATH: "C:/workspace/Sodium/openbabel/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_RPC_XDR_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-rvwv4q'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_b4963.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        msbuild 버전 17.8.3+195e7f5a3(.NET Framework용)
+        빌드 시작: 2024-07-16 오전 9:05:47
+        
+        1 노드의 "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-rvwv4q\\cmTC_b4963.vcxproj" 프로젝트(기본 대상)입니다.
+        PrepareForBuild:
+          "cmTC_b4963.dir\\Debug\\" 디렉터리를 만들고 있습니다.
+          구조적 출력을 사용할 수 있습니다. 컴파일러 진단의 서식은 오류 계층 구조를 반영합니다. 자세한 내용은 https://aka.ms/cpp/structured-output을 참조하세요.
+          "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-rvwv4q\\Debug\\" 디렉터리를 만들고 있습니다.
+          "cmTC_b4963.dir\\Debug\\cmTC_b4963.tlog\\" 디렉터리를 만들고 있습니다.
+        InitializeBuildStatus:
+          "AlwaysCreate"이(가) 지정되었기 때문에 "cmTC_b4963.dir\\Debug\\cmTC_b4963.tlog\\unsuccessfulbuild"을(를) 만들고 있습니다.
+          "cmTC_b4963.dir\\Debug\\cmTC_b4963.tlog\\unsuccessfulbuild"에 연결(touching)하고 있습니다.
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b4963.dir\\Debug\\\\" /Fd"cmTC_b4963.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-rvwv4q\\CheckIncludeFile.c"
+          Microsoft (R) C/C++ 최적화 컴파일러 버전 19.38.33133(x64)
+          Copyright (c) Microsoft Corporation. All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b4963.dir\\Debug\\\\" /Fd"cmTC_b4963.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-rvwv4q\\CheckIncludeFile.c"
+          CheckIncludeFile.c
+        C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-rvwv4q\\CheckIncludeFile.c(1,10): error C1083: 포함 파일을 열 수 없습니다. 'rpc/xdr.h': No such file or directory [C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-rvwv4q\\cmTC_b4963.vcxproj]
+        "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-rvwv4q\\cmTC_b4963.vcxproj" 프로젝트를 빌드했습니다(기본 대상). - 실패
+        
+        빌드하지 못했습니다.
+        
+        "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-rvwv4q\\cmTC_b4963.vcxproj"(기본 대상)(1)->
+        (ClCompile 대상) -> 
+          C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-rvwv4q\\CheckIncludeFile.c(1,10): error C1083: 포함 파일을 열 수 없습니다. 'rpc/xdr.h': No such file or directory [C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-rvwv4q\\cmTC_b4963.vcxproj]
+        
+            경고 0개
+            오류 1개
+        
+        경과 시간: 00:00:01.18
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "CMakeLists.txt:220 (check_include_file)"
+    checks:
+      - "Looking for regex.h"
+    directories:
+      source: "C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-yfj3y6"
+      binary: "C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-yfj3y6"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_MODULE_PATH: "C:/workspace/Sodium/openbabel/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_REGEX_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-yfj3y6'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_00f32.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        msbuild 버전 17.8.3+195e7f5a3(.NET Framework용)
+        빌드 시작: 2024-07-16 오전 9:05:49
+        
+        1 노드의 "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-yfj3y6\\cmTC_00f32.vcxproj" 프로젝트(기본 대상)입니다.
+        PrepareForBuild:
+          "cmTC_00f32.dir\\Debug\\" 디렉터리를 만들고 있습니다.
+          구조적 출력을 사용할 수 있습니다. 컴파일러 진단의 서식은 오류 계층 구조를 반영합니다. 자세한 내용은 https://aka.ms/cpp/structured-output을 참조하세요.
+          "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-yfj3y6\\Debug\\" 디렉터리를 만들고 있습니다.
+          "cmTC_00f32.dir\\Debug\\cmTC_00f32.tlog\\" 디렉터리를 만들고 있습니다.
+        InitializeBuildStatus:
+          "AlwaysCreate"이(가) 지정되었기 때문에 "cmTC_00f32.dir\\Debug\\cmTC_00f32.tlog\\unsuccessfulbuild"을(를) 만들고 있습니다.
+          "cmTC_00f32.dir\\Debug\\cmTC_00f32.tlog\\unsuccessfulbuild"에 연결(touching)하고 있습니다.
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_00f32.dir\\Debug\\\\" /Fd"cmTC_00f32.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-yfj3y6\\CheckIncludeFile.c"
+          Microsoft (R) C/C++ 최적화 컴파일러 버전 19.38.33133(x64)
+          Copyright (c) Microsoft Corporation. All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_00f32.dir\\Debug\\\\" /Fd"cmTC_00f32.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-yfj3y6\\CheckIncludeFile.c"
+          CheckIncludeFile.c
+        C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-yfj3y6\\CheckIncludeFile.c(1,10): error C1083: 포함 파일을 열 수 없습니다. 'regex.h': No such file or directory [C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-yfj3y6\\cmTC_00f32.vcxproj]
+        "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-yfj3y6\\cmTC_00f32.vcxproj" 프로젝트를 빌드했습니다(기본 대상). - 실패
+        
+        빌드하지 못했습니다.
+        
+        "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-yfj3y6\\cmTC_00f32.vcxproj"(기본 대상)(1)->
+        (ClCompile 대상) -> 
+          C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-yfj3y6\\CheckIncludeFile.c(1,10): error C1083: 포함 파일을 열 수 없습니다. 'regex.h': No such file or directory [C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-yfj3y6\\cmTC_00f32.vcxproj]
+        
+            경고 0개
+            오류 1개
+        
+        경과 시간: 00:00:01.19
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckIncludeFileCXX.cmake:89 (try_compile)"
+      - "CMakeLists.txt:221 (check_include_file_cxx)"
+    checks:
+      - "Looking for C++ include sstream"
+    directories:
+      source: "C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-kovjo1"
+      binary: "C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-kovjo1"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_MODULE_PATH: "C:/workspace/Sodium/openbabel/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_SSTREAM"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-kovjo1'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_ab25e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        msbuild 버전 17.8.3+195e7f5a3(.NET Framework용)
+        빌드 시작: 2024-07-16 오전 9:05:51
+        
+        1 노드의 "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-kovjo1\\cmTC_ab25e.vcxproj" 프로젝트(기본 대상)입니다.
+        PrepareForBuild:
+          "cmTC_ab25e.dir\\Debug\\" 디렉터리를 만들고 있습니다.
+          구조적 출력을 사용할 수 있습니다. 컴파일러 진단의 서식은 오류 계층 구조를 반영합니다. 자세한 내용은 https://aka.ms/cpp/structured-output을 참조하세요.
+          "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-kovjo1\\Debug\\" 디렉터리를 만들고 있습니다.
+          "cmTC_ab25e.dir\\Debug\\cmTC_ab25e.tlog\\" 디렉터리를 만들고 있습니다.
+        InitializeBuildStatus:
+          "AlwaysCreate"이(가) 지정되었기 때문에 "cmTC_ab25e.dir\\Debug\\cmTC_ab25e.tlog\\unsuccessfulbuild"을(를) 만들고 있습니다.
+          "cmTC_ab25e.dir\\Debug\\cmTC_ab25e.tlog\\unsuccessfulbuild"에 연결(touching)하고 있습니다.
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_ab25e.dir\\Debug\\\\" /Fd"cmTC_ab25e.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-kovjo1\\CheckIncludeFile.cxx"
+          Microsoft (R) C/C++ 최적화 컴파일러 버전 19.38.33133(x64)
+          Copyright (c) Microsoft Corporation. All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_ab25e.dir\\Debug\\\\" /Fd"cmTC_ab25e.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-kovjo1\\CheckIncludeFile.cxx"
+          CheckIncludeFile.cxx
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-kovjo1\\Debug\\cmTC_ab25e.exe" /INCREMENTAL /ILK:"cmTC_ab25e.dir\\Debug\\cmTC_ab25e.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-kovjo1/Debug/cmTC_ab25e.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-kovjo1/Debug/cmTC_ab25e.lib" /MACHINE:X64  /machine:x64 cmTC_ab25e.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_ab25e.vcxproj -> C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-kovjo1\\Debug\\cmTC_ab25e.exe
+        FinalizeBuildStatus:
+          "cmTC_ab25e.dir\\Debug\\cmTC_ab25e.tlog\\unsuccessfulbuild" 파일을 삭제하고 있습니다.
+          "cmTC_ab25e.dir\\Debug\\cmTC_ab25e.tlog\\cmTC_ab25e.lastbuildstate"에 연결(touching)하고 있습니다.
+        "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-kovjo1\\cmTC_ab25e.vcxproj" 프로젝트를 빌드했습니다(기본 대상).
+        
+        빌드했습니다.
+            경고 0개
+            오류 0개
+        
+        경과 시간: 00:00:01.54
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckSymbolExists.cmake:154 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "CMakeLists.txt:223 (check_symbol_exists)"
+    checks:
+      - "Looking for rint"
+    directories:
+      source: "C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-egwicy"
+      binary: "C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-egwicy"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_MODULE_PATH: "C:/workspace/Sodium/openbabel/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_RINT"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-egwicy'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_aa085.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        msbuild 버전 17.8.3+195e7f5a3(.NET Framework용)
+        빌드 시작: 2024-07-16 오전 9:05:53
+        
+        1 노드의 "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-egwicy\\cmTC_aa085.vcxproj" 프로젝트(기본 대상)입니다.
+        PrepareForBuild:
+          "cmTC_aa085.dir\\Debug\\" 디렉터리를 만들고 있습니다.
+          구조적 출력을 사용할 수 있습니다. 컴파일러 진단의 서식은 오류 계층 구조를 반영합니다. 자세한 내용은 https://aka.ms/cpp/structured-output을 참조하세요.
+          "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-egwicy\\Debug\\" 디렉터리를 만들고 있습니다.
+          "cmTC_aa085.dir\\Debug\\cmTC_aa085.tlog\\" 디렉터리를 만들고 있습니다.
+        InitializeBuildStatus:
+          "AlwaysCreate"이(가) 지정되었기 때문에 "cmTC_aa085.dir\\Debug\\cmTC_aa085.tlog\\unsuccessfulbuild"을(를) 만들고 있습니다.
+          "cmTC_aa085.dir\\Debug\\cmTC_aa085.tlog\\unsuccessfulbuild"에 연결(touching)하고 있습니다.
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_aa085.dir\\Debug\\\\" /Fd"cmTC_aa085.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-egwicy\\CheckSymbolExists.c"
+          Microsoft (R) C/C++ 최적화 컴파일러 버전 19.38.33133(x64)
+          Copyright (c) Microsoft Corporation. All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_aa085.dir\\Debug\\\\" /Fd"cmTC_aa085.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-egwicy\\CheckSymbolExists.c"
+          CheckSymbolExists.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-egwicy\\Debug\\cmTC_aa085.exe" /INCREMENTAL /ILK:"cmTC_aa085.dir\\Debug\\cmTC_aa085.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-egwicy/Debug/cmTC_aa085.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-egwicy/Debug/cmTC_aa085.lib" /MACHINE:X64  /machine:x64 cmTC_aa085.dir\\Debug\\CheckSymbolExists.obj
+          cmTC_aa085.vcxproj -> C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-egwicy\\Debug\\cmTC_aa085.exe
+        FinalizeBuildStatus:
+          "cmTC_aa085.dir\\Debug\\cmTC_aa085.tlog\\unsuccessfulbuild" 파일을 삭제하고 있습니다.
+          "cmTC_aa085.dir\\Debug\\cmTC_aa085.tlog\\cmTC_aa085.lastbuildstate"에 연결(touching)하고 있습니다.
+        "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-egwicy\\cmTC_aa085.vcxproj" 프로젝트를 빌드했습니다(기본 대상).
+        
+        빌드했습니다.
+            경고 0개
+            오류 0개
+        
+        경과 시간: 00:00:01.32
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckSymbolExists.cmake:154 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "CMakeLists.txt:224 (check_symbol_exists)"
+    checks:
+      - "Looking for snprintf"
+    directories:
+      source: "C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-ion2zp"
+      binary: "C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-ion2zp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_MODULE_PATH: "C:/workspace/Sodium/openbabel/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_SNPRINTF"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-ion2zp'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_b65e9.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        msbuild 버전 17.8.3+195e7f5a3(.NET Framework용)
+        빌드 시작: 2024-07-16 오전 9:06:03
+        
+        1 노드의 "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-ion2zp\\cmTC_b65e9.vcxproj" 프로젝트(기본 대상)입니다.
+        PrepareForBuild:
+          "cmTC_b65e9.dir\\Debug\\" 디렉터리를 만들고 있습니다.
+          구조적 출력을 사용할 수 있습니다. 컴파일러 진단의 서식은 오류 계층 구조를 반영합니다. 자세한 내용은 https://aka.ms/cpp/structured-output을 참조하세요.
+          "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-ion2zp\\Debug\\" 디렉터리를 만들고 있습니다.
+          "cmTC_b65e9.dir\\Debug\\cmTC_b65e9.tlog\\" 디렉터리를 만들고 있습니다.
+        InitializeBuildStatus:
+          "AlwaysCreate"이(가) 지정되었기 때문에 "cmTC_b65e9.dir\\Debug\\cmTC_b65e9.tlog\\unsuccessfulbuild"을(를) 만들고 있습니다.
+          "cmTC_b65e9.dir\\Debug\\cmTC_b65e9.tlog\\unsuccessfulbuild"에 연결(touching)하고 있습니다.
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b65e9.dir\\Debug\\\\" /Fd"cmTC_b65e9.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-ion2zp\\CheckSymbolExists.c"
+          Microsoft (R) C/C++ 최적화 컴파일러 버전 19.38.33133(x64)
+          Copyright (c) Microsoft Corporation. All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b65e9.dir\\Debug\\\\" /Fd"cmTC_b65e9.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-ion2zp\\CheckSymbolExists.c"
+          CheckSymbolExists.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-ion2zp\\Debug\\cmTC_b65e9.exe" /INCREMENTAL /ILK:"cmTC_b65e9.dir\\Debug\\cmTC_b65e9.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-ion2zp/Debug/cmTC_b65e9.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-ion2zp/Debug/cmTC_b65e9.lib" /MACHINE:X64  /machine:x64 cmTC_b65e9.dir\\Debug\\CheckSymbolExists.obj
+          cmTC_b65e9.vcxproj -> C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-ion2zp\\Debug\\cmTC_b65e9.exe
+        FinalizeBuildStatus:
+          "cmTC_b65e9.dir\\Debug\\cmTC_b65e9.tlog\\unsuccessfulbuild" 파일을 삭제하고 있습니다.
+          "cmTC_b65e9.dir\\Debug\\cmTC_b65e9.tlog\\cmTC_b65e9.lastbuildstate"에 연결(touching)하고 있습니다.
+        "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-ion2zp\\cmTC_b65e9.vcxproj" 프로젝트를 빌드했습니다(기본 대상).
+        
+        빌드했습니다.
+            경고 0개
+            오류 0개
+        
+        경과 시간: 00:00:01.27
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckSymbolExists.cmake:154 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "CMakeLists.txt:225 (check_symbol_exists)"
+    checks:
+      - "Looking for sranddev"
+    directories:
+      source: "C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-oaahlq"
+      binary: "C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-oaahlq"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_MODULE_PATH: "C:/workspace/Sodium/openbabel/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_SRANDDEV"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-oaahlq'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_25816.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        msbuild 버전 17.8.3+195e7f5a3(.NET Framework용)
+        빌드 시작: 2024-07-16 오전 9:06:05
+        
+        1 노드의 "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-oaahlq\\cmTC_25816.vcxproj" 프로젝트(기본 대상)입니다.
+        PrepareForBuild:
+          "cmTC_25816.dir\\Debug\\" 디렉터리를 만들고 있습니다.
+          구조적 출력을 사용할 수 있습니다. 컴파일러 진단의 서식은 오류 계층 구조를 반영합니다. 자세한 내용은 https://aka.ms/cpp/structured-output을 참조하세요.
+          "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-oaahlq\\Debug\\" 디렉터리를 만들고 있습니다.
+          "cmTC_25816.dir\\Debug\\cmTC_25816.tlog\\" 디렉터리를 만들고 있습니다.
+        InitializeBuildStatus:
+          "AlwaysCreate"이(가) 지정되었기 때문에 "cmTC_25816.dir\\Debug\\cmTC_25816.tlog\\unsuccessfulbuild"을(를) 만들고 있습니다.
+          "cmTC_25816.dir\\Debug\\cmTC_25816.tlog\\unsuccessfulbuild"에 연결(touching)하고 있습니다.
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_25816.dir\\Debug\\\\" /Fd"cmTC_25816.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-oaahlq\\CheckSymbolExists.c"
+          Microsoft (R) C/C++ 최적화 컴파일러 버전 19.38.33133(x64)
+          Copyright (c) Microsoft Corporation. All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_25816.dir\\Debug\\\\" /Fd"cmTC_25816.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-oaahlq\\CheckSymbolExists.c"
+          CheckSymbolExists.c
+        C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-oaahlq\\CheckSymbolExists.c(8,27): error C2065: 'sranddev': 선언되지 않은 식별자입니다. [C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-oaahlq\\cmTC_25816.vcxproj]
+        "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-oaahlq\\cmTC_25816.vcxproj" 프로젝트를 빌드했습니다(기본 대상). - 실패
+        
+        빌드하지 못했습니다.
+        
+        "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-oaahlq\\cmTC_25816.vcxproj"(기본 대상)(1)->
+        (ClCompile 대상) -> 
+          C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-oaahlq\\CheckSymbolExists.c(8,27): error C2065: 'sranddev': 선언되지 않은 식별자입니다. [C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-oaahlq\\cmTC_25816.vcxproj]
+        
+            경고 0개
+            오류 1개
+        
+        경과 시간: 00:00:01.18
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckSymbolExists.cmake:154 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "CMakeLists.txt:226 (check_symbol_exists)"
+    checks:
+      - "Looking for strcasecmp"
+    directories:
+      source: "C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-14yvmy"
+      binary: "C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-14yvmy"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_MODULE_PATH: "C:/workspace/Sodium/openbabel/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_STRCASECMP"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-14yvmy'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_00d8a.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        msbuild 버전 17.8.3+195e7f5a3(.NET Framework용)
+        빌드 시작: 2024-07-16 오전 9:06:07
+        
+        1 노드의 "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-14yvmy\\cmTC_00d8a.vcxproj" 프로젝트(기본 대상)입니다.
+        PrepareForBuild:
+          "cmTC_00d8a.dir\\Debug\\" 디렉터리를 만들고 있습니다.
+          구조적 출력을 사용할 수 있습니다. 컴파일러 진단의 서식은 오류 계층 구조를 반영합니다. 자세한 내용은 https://aka.ms/cpp/structured-output을 참조하세요.
+          "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-14yvmy\\Debug\\" 디렉터리를 만들고 있습니다.
+          "cmTC_00d8a.dir\\Debug\\cmTC_00d8a.tlog\\" 디렉터리를 만들고 있습니다.
+        InitializeBuildStatus:
+          "AlwaysCreate"이(가) 지정되었기 때문에 "cmTC_00d8a.dir\\Debug\\cmTC_00d8a.tlog\\unsuccessfulbuild"을(를) 만들고 있습니다.
+          "cmTC_00d8a.dir\\Debug\\cmTC_00d8a.tlog\\unsuccessfulbuild"에 연결(touching)하고 있습니다.
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_00d8a.dir\\Debug\\\\" /Fd"cmTC_00d8a.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-14yvmy\\CheckSymbolExists.c"
+          Microsoft (R) C/C++ 최적화 컴파일러 버전 19.38.33133(x64)
+          Copyright (c) Microsoft Corporation. All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_00d8a.dir\\Debug\\\\" /Fd"cmTC_00d8a.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-14yvmy\\CheckSymbolExists.c"
+          CheckSymbolExists.c
+        C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-14yvmy\\CheckSymbolExists.c(8,29): error C2065: 'strcasecmp': 선언되지 않은 식별자입니다. [C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-14yvmy\\cmTC_00d8a.vcxproj]
+        "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-14yvmy\\cmTC_00d8a.vcxproj" 프로젝트를 빌드했습니다(기본 대상). - 실패
+        
+        빌드하지 못했습니다.
+        
+        "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-14yvmy\\cmTC_00d8a.vcxproj"(기본 대상)(1)->
+        (ClCompile 대상) -> 
+          C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-14yvmy\\CheckSymbolExists.c(8,29): error C2065: 'strcasecmp': 선언되지 않은 식별자입니다. [C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-14yvmy\\cmTC_00d8a.vcxproj]
+        
+            경고 0개
+            오류 1개
+        
+        경과 시간: 00:00:01.18
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckSymbolExists.cmake:154 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "CMakeLists.txt:227 (check_symbol_exists)"
+    checks:
+      - "Looking for strncasecmp"
+    directories:
+      source: "C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-h600cj"
+      binary: "C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-h600cj"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_MODULE_PATH: "C:/workspace/Sodium/openbabel/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_STRNCASECMP"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-h600cj'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_3b269.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        msbuild 버전 17.8.3+195e7f5a3(.NET Framework용)
+        빌드 시작: 2024-07-16 오전 9:06:08
+        
+        1 노드의 "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-h600cj\\cmTC_3b269.vcxproj" 프로젝트(기본 대상)입니다.
+        PrepareForBuild:
+          "cmTC_3b269.dir\\Debug\\" 디렉터리를 만들고 있습니다.
+          구조적 출력을 사용할 수 있습니다. 컴파일러 진단의 서식은 오류 계층 구조를 반영합니다. 자세한 내용은 https://aka.ms/cpp/structured-output을 참조하세요.
+          "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-h600cj\\Debug\\" 디렉터리를 만들고 있습니다.
+          "cmTC_3b269.dir\\Debug\\cmTC_3b269.tlog\\" 디렉터리를 만들고 있습니다.
+        InitializeBuildStatus:
+          "AlwaysCreate"이(가) 지정되었기 때문에 "cmTC_3b269.dir\\Debug\\cmTC_3b269.tlog\\unsuccessfulbuild"을(를) 만들고 있습니다.
+          "cmTC_3b269.dir\\Debug\\cmTC_3b269.tlog\\unsuccessfulbuild"에 연결(touching)하고 있습니다.
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_3b269.dir\\Debug\\\\" /Fd"cmTC_3b269.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-h600cj\\CheckSymbolExists.c"
+          Microsoft (R) C/C++ 최적화 컴파일러 버전 19.38.33133(x64)
+          Copyright (c) Microsoft Corporation. All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_3b269.dir\\Debug\\\\" /Fd"cmTC_3b269.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-h600cj\\CheckSymbolExists.c"
+          CheckSymbolExists.c
+        C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-h600cj\\CheckSymbolExists.c(8,30): error C2065: 'strncasecmp': 선언되지 않은 식별자입니다. [C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-h600cj\\cmTC_3b269.vcxproj]
+        "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-h600cj\\cmTC_3b269.vcxproj" 프로젝트를 빌드했습니다(기본 대상). - 실패
+        
+        빌드하지 못했습니다.
+        
+        "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-h600cj\\cmTC_3b269.vcxproj"(기본 대상)(1)->
+        (ClCompile 대상) -> 
+          C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-h600cj\\CheckSymbolExists.c(8,30): error C2065: 'strncasecmp': 선언되지 않은 식별자입니다. [C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-h600cj\\cmTC_3b269.vcxproj]
+        
+            경고 0개
+            오류 1개
+        
+        경과 시간: 00:00:01.18
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "CMakeLists.txt:230 (check_library_exists)"
+    checks:
+      - "Looking for dlopen in dl"
+    directories:
+      source: "C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-13150n"
+      binary: "C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-13150n"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_MODULE_PATH: "C:/workspace/Sodium/openbabel/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_LIBDL"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-13150n'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_7e864.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        msbuild 버전 17.8.3+195e7f5a3(.NET Framework용)
+        빌드 시작: 2024-07-16 오전 9:06:10
+        
+        1 노드의 "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-13150n\\cmTC_7e864.vcxproj" 프로젝트(기본 대상)입니다.
+        PrepareForBuild:
+          "cmTC_7e864.dir\\Debug\\" 디렉터리를 만들고 있습니다.
+          구조적 출력을 사용할 수 있습니다. 컴파일러 진단의 서식은 오류 계층 구조를 반영합니다. 자세한 내용은 https://aka.ms/cpp/structured-output을 참조하세요.
+          "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-13150n\\Debug\\" 디렉터리를 만들고 있습니다.
+          "cmTC_7e864.dir\\Debug\\cmTC_7e864.tlog\\" 디렉터리를 만들고 있습니다.
+        InitializeBuildStatus:
+          "AlwaysCreate"이(가) 지정되었기 때문에 "cmTC_7e864.dir\\Debug\\cmTC_7e864.tlog\\unsuccessfulbuild"을(를) 만들고 있습니다.
+          "cmTC_7e864.dir\\Debug\\cmTC_7e864.tlog\\unsuccessfulbuild"에 연결(touching)하고 있습니다.
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=dlopen /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_7e864.dir\\Debug\\\\" /Fd"cmTC_7e864.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-13150n\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ 최적화 컴파일러 버전 19.38.33133(x64)
+          Copyright (c) Microsoft Corporation. All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=dlopen /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_7e864.dir\\Debug\\\\" /Fd"cmTC_7e864.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-13150n\\CheckFunctionExists.c"
+          CheckFunctionExists.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-13150n\\Debug\\cmTC_7e864.exe" /INCREMENTAL /ILK:"cmTC_7e864.dir\\Debug\\cmTC_7e864.ilk" /NOLOGO dl.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-13150n/Debug/cmTC_7e864.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-13150n/Debug/cmTC_7e864.lib" /MACHINE:X64  /machine:x64 cmTC_7e864.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: 'dl.lib' 파일을 열 수 없습니다. [C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-13150n\\cmTC_7e864.vcxproj]
+        "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-13150n\\cmTC_7e864.vcxproj" 프로젝트를 빌드했습니다(기본 대상). - 실패
+        
+        빌드하지 못했습니다.
+        
+        "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-13150n\\cmTC_7e864.vcxproj"(기본 대상)(1)->
+        (Link 대상) -> 
+          LINK : fatal error LNK1104: 'dl.lib' 파일을 열 수 없습니다. [C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-13150n\\cmTC_7e864.vcxproj]
+        
+            경고 0개
+            오류 1개
+        
+        경과 시간: 00:00:01.16
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckTypeSize.cmake:251 (check_include_file)"
+      - "CMakeLists.txt:233 (check_type_size)"
+    checks:
+      - "Looking for sys/types.h"
+    directories:
+      source: "C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-s982uy"
+      binary: "C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-s982uy"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_MODULE_PATH: "C:/workspace/Sodium/openbabel/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_SYS_TYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-s982uy'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_fb89c.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        msbuild 버전 17.8.3+195e7f5a3(.NET Framework용)
+        빌드 시작: 2024-07-16 오전 9:06:11
+        
+        1 노드의 "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-s982uy\\cmTC_fb89c.vcxproj" 프로젝트(기본 대상)입니다.
+        PrepareForBuild:
+          "cmTC_fb89c.dir\\Debug\\" 디렉터리를 만들고 있습니다.
+          구조적 출력을 사용할 수 있습니다. 컴파일러 진단의 서식은 오류 계층 구조를 반영합니다. 자세한 내용은 https://aka.ms/cpp/structured-output을 참조하세요.
+          "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-s982uy\\Debug\\" 디렉터리를 만들고 있습니다.
+          "cmTC_fb89c.dir\\Debug\\cmTC_fb89c.tlog\\" 디렉터리를 만들고 있습니다.
+        InitializeBuildStatus:
+          "AlwaysCreate"이(가) 지정되었기 때문에 "cmTC_fb89c.dir\\Debug\\cmTC_fb89c.tlog\\unsuccessfulbuild"을(를) 만들고 있습니다.
+          "cmTC_fb89c.dir\\Debug\\cmTC_fb89c.tlog\\unsuccessfulbuild"에 연결(touching)하고 있습니다.
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_fb89c.dir\\Debug\\\\" /Fd"cmTC_fb89c.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-s982uy\\CheckIncludeFile.c"
+          Microsoft (R) C/C++ 최적화 컴파일러 버전 19.38.33133(x64)
+          Copyright (c) Microsoft Corporation. All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_fb89c.dir\\Debug\\\\" /Fd"cmTC_fb89c.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-s982uy\\CheckIncludeFile.c"
+          CheckIncludeFile.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-s982uy\\Debug\\cmTC_fb89c.exe" /INCREMENTAL /ILK:"cmTC_fb89c.dir\\Debug\\cmTC_fb89c.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-s982uy/Debug/cmTC_fb89c.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-s982uy/Debug/cmTC_fb89c.lib" /MACHINE:X64  /machine:x64 cmTC_fb89c.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_fb89c.vcxproj -> C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-s982uy\\Debug\\cmTC_fb89c.exe
+        FinalizeBuildStatus:
+          "cmTC_fb89c.dir\\Debug\\cmTC_fb89c.tlog\\unsuccessfulbuild" 파일을 삭제하고 있습니다.
+          "cmTC_fb89c.dir\\Debug\\cmTC_fb89c.tlog\\cmTC_fb89c.lastbuildstate"에 연결(touching)하고 있습니다.
+        "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-s982uy\\cmTC_fb89c.vcxproj" 프로젝트를 빌드했습니다(기본 대상).
+        
+        빌드했습니다.
+            경고 0개
+            오류 0개
+        
+        경과 시간: 00:00:01.24
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckTypeSize.cmake:252 (check_include_file)"
+      - "CMakeLists.txt:233 (check_type_size)"
+    checks:
+      - "Looking for stdint.h"
+    directories:
+      source: "C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-oek9bd"
+      binary: "C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-oek9bd"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_MODULE_PATH: "C:/workspace/Sodium/openbabel/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_STDINT_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-oek9bd'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_e89e6.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        msbuild 버전 17.8.3+195e7f5a3(.NET Framework용)
+        빌드 시작: 2024-07-16 오전 9:06:13
+        
+        1 노드의 "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-oek9bd\\cmTC_e89e6.vcxproj" 프로젝트(기본 대상)입니다.
+        PrepareForBuild:
+          "cmTC_e89e6.dir\\Debug\\" 디렉터리를 만들고 있습니다.
+          구조적 출력을 사용할 수 있습니다. 컴파일러 진단의 서식은 오류 계층 구조를 반영합니다. 자세한 내용은 https://aka.ms/cpp/structured-output을 참조하세요.
+          "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-oek9bd\\Debug\\" 디렉터리를 만들고 있습니다.
+          "cmTC_e89e6.dir\\Debug\\cmTC_e89e6.tlog\\" 디렉터리를 만들고 있습니다.
+        InitializeBuildStatus:
+          "AlwaysCreate"이(가) 지정되었기 때문에 "cmTC_e89e6.dir\\Debug\\cmTC_e89e6.tlog\\unsuccessfulbuild"을(를) 만들고 있습니다.
+          "cmTC_e89e6.dir\\Debug\\cmTC_e89e6.tlog\\unsuccessfulbuild"에 연결(touching)하고 있습니다.
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_e89e6.dir\\Debug\\\\" /Fd"cmTC_e89e6.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-oek9bd\\CheckIncludeFile.c"
+          Microsoft (R) C/C++ 최적화 컴파일러 버전 19.38.33133(x64)
+          Copyright (c) Microsoft Corporation. All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_e89e6.dir\\Debug\\\\" /Fd"cmTC_e89e6.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-oek9bd\\CheckIncludeFile.c"
+          CheckIncludeFile.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-oek9bd\\Debug\\cmTC_e89e6.exe" /INCREMENTAL /ILK:"cmTC_e89e6.dir\\Debug\\cmTC_e89e6.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-oek9bd/Debug/cmTC_e89e6.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-oek9bd/Debug/cmTC_e89e6.lib" /MACHINE:X64  /machine:x64 cmTC_e89e6.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_e89e6.vcxproj -> C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-oek9bd\\Debug\\cmTC_e89e6.exe
+        FinalizeBuildStatus:
+          "cmTC_e89e6.dir\\Debug\\cmTC_e89e6.tlog\\unsuccessfulbuild" 파일을 삭제하고 있습니다.
+          "cmTC_e89e6.dir\\Debug\\cmTC_e89e6.tlog\\cmTC_e89e6.lastbuildstate"에 연결(touching)하고 있습니다.
+        "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-oek9bd\\cmTC_e89e6.vcxproj" 프로젝트를 빌드했습니다(기본 대상).
+        
+        빌드했습니다.
+            경고 0개
+            오류 0개
+        
+        경과 시간: 00:00:01.24
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckTypeSize.cmake:253 (check_include_file)"
+      - "CMakeLists.txt:233 (check_type_size)"
+    checks:
+      - "Looking for stddef.h"
+    directories:
+      source: "C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-9ujzos"
+      binary: "C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-9ujzos"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_MODULE_PATH: "C:/workspace/Sodium/openbabel/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_STDDEF_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-9ujzos'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_e1078.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        msbuild 버전 17.8.3+195e7f5a3(.NET Framework용)
+        빌드 시작: 2024-07-16 오전 9:06:15
+        
+        1 노드의 "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-9ujzos\\cmTC_e1078.vcxproj" 프로젝트(기본 대상)입니다.
+        PrepareForBuild:
+          "cmTC_e1078.dir\\Debug\\" 디렉터리를 만들고 있습니다.
+          구조적 출력을 사용할 수 있습니다. 컴파일러 진단의 서식은 오류 계층 구조를 반영합니다. 자세한 내용은 https://aka.ms/cpp/structured-output을 참조하세요.
+          "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-9ujzos\\Debug\\" 디렉터리를 만들고 있습니다.
+          "cmTC_e1078.dir\\Debug\\cmTC_e1078.tlog\\" 디렉터리를 만들고 있습니다.
+        InitializeBuildStatus:
+          "AlwaysCreate"이(가) 지정되었기 때문에 "cmTC_e1078.dir\\Debug\\cmTC_e1078.tlog\\unsuccessfulbuild"을(를) 만들고 있습니다.
+          "cmTC_e1078.dir\\Debug\\cmTC_e1078.tlog\\unsuccessfulbuild"에 연결(touching)하고 있습니다.
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_e1078.dir\\Debug\\\\" /Fd"cmTC_e1078.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-9ujzos\\CheckIncludeFile.c"
+          Microsoft (R) C/C++ 최적화 컴파일러 버전 19.38.33133(x64)
+          Copyright (c) Microsoft Corporation. All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_e1078.dir\\Debug\\\\" /Fd"cmTC_e1078.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-9ujzos\\CheckIncludeFile.c"
+          CheckIncludeFile.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-9ujzos\\Debug\\cmTC_e1078.exe" /INCREMENTAL /ILK:"cmTC_e1078.dir\\Debug\\cmTC_e1078.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-9ujzos/Debug/cmTC_e1078.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-9ujzos/Debug/cmTC_e1078.lib" /MACHINE:X64  /machine:x64 cmTC_e1078.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_e1078.vcxproj -> C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-9ujzos\\Debug\\cmTC_e1078.exe
+        FinalizeBuildStatus:
+          "cmTC_e1078.dir\\Debug\\cmTC_e1078.tlog\\unsuccessfulbuild" 파일을 삭제하고 있습니다.
+          "cmTC_e1078.dir\\Debug\\cmTC_e1078.tlog\\cmTC_e1078.lastbuildstate"에 연결(touching)하고 있습니다.
+        "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-9ujzos\\cmTC_e1078.vcxproj" 프로젝트를 빌드했습니다(기본 대상).
+        
+        빌드했습니다.
+            경고 0개
+            오류 0개
+        
+        경과 시간: 00:00:01.26
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckTypeSize.cmake:147 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckTypeSize.cmake:272 (__check_type_size_impl)"
+      - "CMakeLists.txt:233 (check_type_size)"
+    checks:
+      - "Check size of clock_t"
+    directories:
+      source: "C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-tvszpz"
+      binary: "C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-tvszpz"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_MODULE_PATH: "C:/workspace/Sodium/openbabel/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_CLOCK_T"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-tvszpz'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_03f45.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        msbuild 버전 17.8.3+195e7f5a3(.NET Framework용)
+        빌드 시작: 2024-07-16 오전 9:06:16
+        
+        1 노드의 "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-tvszpz\\cmTC_03f45.vcxproj" 프로젝트(기본 대상)입니다.
+        PrepareForBuild:
+          "cmTC_03f45.dir\\Debug\\" 디렉터리를 만들고 있습니다.
+          구조적 출력을 사용할 수 있습니다. 컴파일러 진단의 서식은 오류 계층 구조를 반영합니다. 자세한 내용은 https://aka.ms/cpp/structured-output을 참조하세요.
+          "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-tvszpz\\Debug\\" 디렉터리를 만들고 있습니다.
+          "cmTC_03f45.dir\\Debug\\cmTC_03f45.tlog\\" 디렉터리를 만들고 있습니다.
+        InitializeBuildStatus:
+          "AlwaysCreate"이(가) 지정되었기 때문에 "cmTC_03f45.dir\\Debug\\cmTC_03f45.tlog\\unsuccessfulbuild"을(를) 만들고 있습니다.
+          "cmTC_03f45.dir\\Debug\\cmTC_03f45.tlog\\unsuccessfulbuild"에 연결(touching)하고 있습니다.
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_03f45.dir\\Debug\\\\" /Fd"cmTC_03f45.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-tvszpz\\CLOCK_T.c"
+          Microsoft (R) C/C++ 최적화 컴파일러 버전 19.38.33133(x64)
+          Copyright (c) Microsoft Corporation. All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_03f45.dir\\Debug\\\\" /Fd"cmTC_03f45.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-tvszpz\\CLOCK_T.c"
+          CLOCK_T.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-tvszpz\\Debug\\cmTC_03f45.exe" /INCREMENTAL /ILK:"cmTC_03f45.dir\\Debug\\cmTC_03f45.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-tvszpz/Debug/cmTC_03f45.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/workspace/Sodium/openbabel/ob-build/CMakeFiles/CMakeScratch/TryCompile-tvszpz/Debug/cmTC_03f45.lib" /MACHINE:X64  /machine:x64 cmTC_03f45.dir\\Debug\\CLOCK_T.obj
+          cmTC_03f45.vcxproj -> C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-tvszpz\\Debug\\cmTC_03f45.exe
+        FinalizeBuildStatus:
+          "cmTC_03f45.dir\\Debug\\cmTC_03f45.tlog\\unsuccessfulbuild" 파일을 삭제하고 있습니다.
+          "cmTC_03f45.dir\\Debug\\cmTC_03f45.tlog\\cmTC_03f45.lastbuildstate"에 연결(touching)하고 있습니다.
+        "C:\\workspace\\Sodium\\openbabel\\ob-build\\CMakeFiles\\CMakeScratch\\TryCompile-tvszpz\\cmTC_03f45.vcxproj" 프로젝트를 빌드했습니다(기본 대상).
+        
+        빌드했습니다.
+            경고 0개
+            오류 0개
+        
+        경과 시간: 00:00:01.27
+        
+      exitCode: 0
+...

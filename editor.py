@@ -1,57 +1,12 @@
 import pygame
 from atom import Atom
-from openbabel import pybabel
+from atom import sel_atom
+from button import Button
 from openbabel import pybel
 
 wsize = (1280, 720)
 
-
 cs = 50
-
-class Button():
-    def __init__(self, att, j, i):
-
-        self.i = i
-        self.j = j
-        self.att = att
-
-        self.pos = [0, 0]
-        self.scale = cs
-        
-    def draw(self, screen, font, sc):
-        j = self.j
-        i = self.i
-        att = self.att
-
-        global wsize, cs
-
-        self.pos = [wsize[0] / 2 + (cs) * (-9 + j) + cs / 2, wsize[1] - sc[1] + cs / 2 + (cs) * i + cs / 2]
-        
-        pygame.draw.rect(screen, (140, 140, 140), \
-                         (self.pos[0] - self.scale / 2, self.pos[1] - self.scale / 2,\
-                                  self.scale, self.scale))
-        pygame.draw.rect(screen, (240, 240, 240), \
-                             (self.pos[0] + 2 - self.scale / 2, self.pos[1] + 2 - self.scale / 2,\
-                                  self.scale - 4, self.scale - 4))
-
-        f = font.render(att[i][j], True, (0, 0, 0))
-        screen.blit(f, f.get_rect(center=(wsize[0] / 2 + (cs) * (-9 + j) + cs / 2,\
-                                               wsize[1] - sc[1] + cs / 2 + (cs) * i + cs / 2)))
-
-    def tick(self, atoms, editor):
-        global cs
-        
-        twm = abs(pygame.mouse.get_pos()[0] - (self.pos[0])) < 25 and\
-            abs(pygame.mouse.get_pos()[1] - (self.pos[1])) < 25
-
-        if twm:
-            self.scale += (cs / 3 * 4 - self.scale) / 5
-
-            if editor.click:
-                atoms.append(Atom(self.att[self.i][self.j], editor.att))
-        else:
-            self.scale += (cs - self.scale) / 5
-        
         
 class Editor():
 
@@ -64,6 +19,7 @@ class Editor():
         self.click = False
         self.atoms = []
 
+        self.smi = ''
         self.w = 18
         self.h = 4
         
@@ -79,38 +35,44 @@ class Editor():
         for i in range(len(self.att)):
             for j in range(len(self.att[i])):
                 if self.att[i][j] != '':
-                    self.buttons.append(Button(self.att, j, i))
+                    self.buttons.append(Button(self.att, j, i, cs, wsize))
 
-        # Atom 생성
-        carbon = Atom("C", self.att)
-        oxygen = Atom("O", self.att)
-        hydrogen = Atom("H", self.att)
-        self.atoms.append(carbon)
-        self.atoms.append(oxygen)
-        self.atoms.append(hydrogen)
+    def cr_m(self): # create model
+        
+        for atom in self.atoms:
+            atom.vis = False
+            
+        for atom in self.atoms:
+            if atom.vis:
+                continue
 
-        # Bond 생성
-        carbon.add_bond(hydrogen, "-")
-        carbon.add_bond(oxygen, "=")
+            self.smi = self.to_smiles(atom)
 
-        # Smiles 변환
-        smiles_representation = self.to_smiles(carbon)
-        print("Smiles 표기법:", smiles_representation)
+            if self.smi != None:
+                print('created : ', self.smi)
+                
+                mol = pybel.readstring('smi', self.smi)
+                mol.make3D()
+                print(mol.write('sdf'))
+                mol.draw()
 
-        m = pybel.readstring("smi", smiles_representation)
-        print(m)
-
+        
     def to_smiles(self, atom, visited=None):
         if visited is None:
             visited = set()
 
+        if atom.at_type == 'H':
+            return
+            
         smiles = atom.at_type
         visited.add(atom)
+        atom.vis = True
 
         for neighbor, bond_type in atom.bonds:
             if neighbor not in visited:
-                smiles += f"({self.to_smiles(neighbor, visited)})"
-                smiles += bond_type
+                if neighbor.at_type != 'H':
+                    smiles += f"({self.to_smiles(neighbor, visited)})"
+#                    smiles += bond_type
 
         return smiles
 
@@ -127,7 +89,10 @@ class Editor():
                     run = False
                 elif event.type == pygame.MOUSEBUTTONUP:
                     self.click = True
-
+                elif event.type == pygame.KEYDOWN:
+                    if event.key == pygame.K_SPACE:
+                        self.cr_m()
+                        
             self.tick()
             self.draw()
             
@@ -140,6 +105,10 @@ class Editor():
     def tick(self):
         for btn in self.buttons:
             btn.tick(self.atoms, self)
+
+        for atom in self.atoms:
+            atom.tick(self.atoms)
+            atom.vis = False
         
     def bg(self):
         self.bgt -= 1
@@ -170,5 +139,13 @@ class Editor():
         self.bg()
         self.table()
 
+        from atom import bond_atom
+        
+        if bond_atom != None:
+            pygame.draw.line(self.screen, (255, 255, 240), (bond_atom.position.x, bond_atom.position.y), pygame.mouse.get_pos(), 5)
+
+        for atom in self.atoms:
+            atom.draw_bond(self.screen)
+            
         for atom in self.atoms:
             atom.draw(self.screen, self.font)

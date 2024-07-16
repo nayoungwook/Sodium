@@ -1,0 +1,6 @@
+k
+import editor
+
+if __name__ == "__main__":
+    ed = editor.Editor()
+    ed.run()
