@@ -47,10 +47,9 @@ class Editor():
                 continue
 
             self.smi = self.to_smiles(atom)
+            print('created : ', self.smi)
 
             if self.smi != None:
-                print('created : ', self.smi)
-                
                 mol = pybel.readstring('smi', self.smi)
                 mol.make3D()
                 print(mol.write('sdf'))
@@ -71,8 +70,10 @@ class Editor():
         for neighbor, bond_type in atom.bonds:
             if neighbor not in visited:
                 if neighbor.at_type != 'H':
-                    smiles += f"({self.to_smiles(neighbor, visited)})"
-#                    smiles += bond_type
+                    if bond_type == '=':
+                        smiles += '1'
+
+                    smiles += f"{self.to_smiles(neighbor, visited)}"
 
         return smiles
 

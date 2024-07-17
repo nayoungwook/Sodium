@@ -22,12 +22,16 @@ class Atom:
 
     def draw_bond(self, screen):
         for bond in self.bonds:
-#            print(bond[1])
             if bond[1] == '-':
                 pygame.draw.line(screen, (255, 255, 240), (bond[0].position.x, bond[0].position.y), (self.position.x, self.position.y), 5)
             elif bond[1] == '=':
-                pygame.draw.line(screen, (255, 255, 240), (bond[0].position.x - 5, bond[0].position.y - 5), (self.position.x - 5, self.position.y - 5), 3)
-                pygame.draw.line(screen, (255, 255, 240), (bond[0].position.x + 5, bond[0].position.y + 5), (self.position.x + 5, self.position.y + 5), 3)
+                r = math.atan2((bond[0].position.y - self.position.y), (bond[0].position.x - self.position.x))
+
+                pygame.draw.line(screen, (255, 255, 240), (bond[0].position.x - math.sin(r) * 5, bond[0].position.y - math.sin(r) * 5),\
+                                 (self.position.x + math.cos(r) * 5, self.position.y + math.cos(r) * 5), 3)
+                
+                pygame.draw.line(screen, (255, 255, 240), (bond[0].position.x + math.sin(r) * 5, bond[0].position.y + math.sin(r) * 5),\
+                                 (self.position.x - math.cos(r) * 5, self.position.y - math.cos(r) * 5), 3)
                 
     def draw(self, screen, font):
         pygame.draw.circle(screen, (150, 255, 155), (self.position.x, self.position.y), 20)
@@ -67,8 +71,30 @@ class Atom:
                 for atom in atoms:
                     if atom != self:
                         if math.sqrt( (atom.position.x - pygame.mouse.get_pos()[0]) ** 2 + (atom.position.y - pygame.mouse.get_pos()[1]) ** 2 ) <= 30:
-                            self.add_bond(atom, '-')
-                
+                            l = 1
+                            
+                            for f_a in self.bonds:
+                                if f_a[0] == atom:
+                                    if f_a[1] == '-':
+                                        l = 2
+                                    elif f_a[1] == '=':
+                                        l = 3
+                                        
+                                    self.bonds.remove(f_a)
+
+                            for f_a in atom.bonds:
+                                if f_a[0] == self:
+                                    atom.bonds.remove(f_a)
+
+                            s = '-'
+
+                            if l == 2:
+                                s = '='
+                            elif l == 3:
+                                s = '#'
+
+                            self.add_bond(atom, s)
+
                 bond_atom = None
                     
         if sel_atom == self:
