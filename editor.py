@@ -58,30 +58,31 @@ class Editor():
             atom.vis = False
             
         for atom in self.atoms:
-            if atom.vis or atom.at_type == 'H':
-                continue
-
-            self.smi = self.to_smiles(atom)
-            print('created : ', self.smi)
+            if not atom.vis and atom.at_type != 'H':
+                self.smi = self.to_smiles(atom)
+                print('created : ', self.smi)
             
-            if self.smi != None:
-                mol = pybel.readstring('smi', self.smi)
-                mol.make3D()
-                print(mol.write('sdf'))
-                mol.draw()
-
+                if self.smi != None:
+                    mol = pybel.readstring('smi', self.smi)
+                    mol.make3D()
+                    print(mol.write('sdf'))
+                    mol.draw()
 
     def ch_cy(self, atom):
         atom.vis = True
 
         f_c = 0 # neighbor found count
+        f_f = 0 # full neighbor count ( without H )
         
         for n, b in atom.bonds:
+            if n.at_type != 'H':
+                f_f += 1
+                
             if not n.vis and n.at_type != 'H':
                 f_c += 1
                 return self.ch_cy(n)
 
-        if len(atom.bonds) > 1 and f_c == 0:
+        if f_f > 1 and f_c == 0:
             return atom
                 
     def to_smiles(self, atom, visited=None):
@@ -89,10 +90,10 @@ class Editor():
         if visited is None:
             visited = set()
 
-        if atom.at_type == 'H':
-            return
+        smiles = ''
             
-        smiles = atom.at_type
+        if atom.at_type != 'H':
+            smiles = atom.at_type
 
         if atom.cy_id != 0:
             smiles += str(atom.cy_id)
@@ -105,8 +106,6 @@ class Editor():
         for neighbor, bond_type in atom.bonds:
             if neighbor not in visited:
                 if neighbor.at_type != 'H':
-
-
                     if i == 0 and len(atom.bonds) != 1:
                         smiles += '('
                                             
@@ -195,3 +194,17 @@ class Editor():
             
         for atom in self.atoms:
             atom.draw(self.screen, self.font)
+
+        for atom in self.atoms:
+            atom.vis = False
+
+        i = 0
+        for atom in self.atoms:
+            if not atom.vis and atom.at_type != 'H':
+                smi = self.to_smiles(atom)
+                f = self.font.render(smi, True, (0, 0, 0))
+                r = f.get_rect().move(0, 40 * i)
+                self.screen.blit(f, r)
+
+            i+=1
+

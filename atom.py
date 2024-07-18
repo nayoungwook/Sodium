@@ -66,7 +66,7 @@ class Atom:
         if not pygame.mouse.get_pressed()[0]:
             if sel_atom == self:
                 sel_atom = None
-                    
+
         if not pygame.mouse.get_pressed()[2]:
             if bond_atom == self:
                 for atom in atoms:
@@ -113,6 +113,10 @@ class Atom:
                     
                     self.position.x += (self.position.x - atom.position.x) / 5
                     self.position.y += (self.position.y - atom.position.y) / 5
+
+        if pygame.mouse.get_pressed()[1]:
+            if math.sqrt( (self.position.x - pygame.mouse.get_pos()[0]) ** 2 + (self.position.y - pygame.mouse.get_pos()[1]) **2) <= 30:
+                atoms.remove(self)
         
 class Bond:
     def __init__(self, atom1, atom2, bond_type):
