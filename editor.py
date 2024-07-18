@@ -41,22 +41,51 @@ class Editor():
         
         for atom in self.atoms:
             atom.vis = False
-            
+            atom.cy_id = 0
+
         for atom in self.atoms:
             if atom.vis:
                 continue
 
+            cy = None
+            cy = self.ch_cy(atom)
+            
+            if cy is not None:
+                atom.cy_id += 1
+                cy.cy_id += 1
+        
+        for atom in self.atoms:
+            atom.vis = False
+            
+        for atom in self.atoms:
+            if atom.vis or atom.at_type == 'H':
+                continue
+
             self.smi = self.to_smiles(atom)
             print('created : ', self.smi)
-
+            
             if self.smi != None:
                 mol = pybel.readstring('smi', self.smi)
                 mol.make3D()
                 print(mol.write('sdf'))
                 mol.draw()
 
+
+    def ch_cy(self, atom):
+        atom.vis = True
+
+        f_c = 0 # neighbor found count
         
+        for n, b in atom.bonds:
+            if not n.vis and n.at_type != 'H':
+                f_c += 1
+                return self.ch_cy(n)
+
+        if len(atom.bonds) > 1 and f_c == 0:
+            return atom
+                
     def to_smiles(self, atom, visited=None):
+
         if visited is None:
             visited = set()
 
@@ -64,16 +93,32 @@ class Editor():
             return
             
         smiles = atom.at_type
+
+        if atom.cy_id != 0:
+            smiles += str(atom.cy_id)
+
         visited.add(atom)
         atom.vis = True
 
+        i = 0
+        
         for neighbor, bond_type in atom.bonds:
             if neighbor not in visited:
                 if neighbor.at_type != 'H':
-                    if bond_type == '=':
-                        smiles += '1'
+
+
+                    if i == 0 and len(atom.bonds) != 1:
+                        smiles += '('
+                                            
+                    if bond_type != '-':
+                        smiles += bond_type
 
                     smiles += f"{self.to_smiles(neighbor, visited)}"
+
+                    if i == 0 and len(atom.bonds) != 1:
+                        smiles += ')'
+                                                
+                    i+=1
 
         return smiles
 

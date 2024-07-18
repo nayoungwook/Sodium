@@ -19,6 +19,7 @@ class Atom:
         self.position = Vector(1280 / 2, 720 / 2)
         self.bonds = []
         self.vis = False
+        self.cy_id = 0
 
     def draw_bond(self, screen):
         for bond in self.bonds:
